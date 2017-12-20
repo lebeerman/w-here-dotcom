@@ -49,6 +49,10 @@ select {
   width: 14rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER STYLING */
 
 header {
