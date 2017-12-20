@@ -66,6 +66,10 @@ select {
   border: 6px solid #0de792;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER STYLING */
 
 header {
