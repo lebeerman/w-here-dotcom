@@ -11,6 +11,14 @@ a, p, h1, h2, h3, select, label, button {
 
 .situationlist {}
 
+body {
+  display: flex;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 strong {
   font-weight: bold;
 }
@@ -40,13 +48,22 @@ select {
 
 .button {
   background-color: #0de792;
-  border: none;
+  border: 4px solid #0de792;
   color: black;
-  font-size: 1.3em;
+  font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
-  height: 3rem;
+  height: 5rem;
   margin: 1rem;
-  width: 14rem;
+  width: 22rem;
+}
+
+.button:hover {
+  background: transparent;
+  color: #0de792;
+}
+.button:active {
+  top: -98%;
+  border: 6px solid #0de792;
 }
 
 .hidden {
@@ -62,8 +79,8 @@ header {
 }
 
 header img {
-  height: 10rem;
-  width: 43em;
+  height: auto;
+  width: 60%;
 }
 
 button {
@@ -107,4 +124,29 @@ footer a {
 .coming-soon {
   font-size: 1.6em;
   font-weight: bold;
+}
+
+/*  SUBMISSION PAGE */
+
+#submissionheading {
+  font-size: 2rem;
+  margin: 2vh;
+}
+
+.submissionlabel {
+  font-size: 1.3rem;
+}
+
+#.newsituationform {
+  padding: 20px;
+  margin: 20px;
+}
+
+.newsituation {
+  margin: 10px;
+  width: 30vw;
+  height: 3vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
