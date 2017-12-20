@@ -14,7 +14,6 @@ a, p, h1, h2, h3, select, label, button {
 body {
   display: flex;
   height: 100vh;
-
   flex-direction: column;
   justify-content: space-between;
 }
@@ -61,6 +60,7 @@ select {
   background: transparent;
   color: #0de792;
 }
+
 .button:active {
   top: -98%;
   border: 6px solid #0de792;
@@ -125,8 +125,6 @@ footer a {
   font-size: 1.6em;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 
 /*  SUBMISSION PAGE */
 
@@ -146,10 +144,14 @@ footer a {
 
 .newsituation {
   margin: 10px;
-  width: 30vw;
+  width: 30rem;
   height: 3vh;
   align-items: center;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 }
 >>>>>>> ef25dbaf0f7994fb135f3eade8b04e15674d9bf0
+=======
+}
+>>>>>>> a8769049a61f075e7cb0777902b449dd9994d0c8
