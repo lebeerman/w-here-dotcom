@@ -10,22 +10,32 @@
 </head>
 
 <body>
+  <header>
+    <img class="logo" src="assets/w-here-logo.png" alt="W'Here</br>the app that let's everyone know you're here"/>
+  </header>
 
-  <nav class="navigation">
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-    </ul>
-  </nav>
-
-
-  <select name="situationlist">
-    <option value=""></option>
-  </select>
-  <button class="wehere"></button>
-  <div class="video"></div>
-
+  <main>
+    <div class="container">
+      <form>
+        <div class="select">
+          <label for="situation-list">What are you walking into?</label>
+          <select id="situation" name="situation-list">
+            <option value="">Select a situation</option>
+          </select>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="button">TELL 'EM YOU HERE</button>
+        </div>
+      </form>
+      <div class="video">
+        <iframe src="" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="nav"><a href="about.html">About</a></div>
+    <div class="nav"><a href="">Submit Your Own</a></div>
+  </footer>
   <script src="./src/index.js" charset="utf-8"></script>
 </body>
-
 </html>
