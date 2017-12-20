@@ -14,7 +14,6 @@ a, p, h1, h2, h3, select, label, button {
 body {
   display: flex;
   height: 100vh;
-
   flex-direction: column;
   justify-content: space-between;
 }
@@ -61,6 +60,7 @@ select {
   background: transparent;
   color: #0de792;
 }
+
 .button:active {
   top: -98%;
   border: 6px solid #0de792;
@@ -140,7 +140,7 @@ footer a {
 
 .newsituation {
   margin: 10px;
-  width: 30vw;
+  width: 30rem;
   height: 3vh;
   align-items: center;
   display: flex;
