@@ -7,6 +7,7 @@
   <title>W'here: The App that Let's Everyone Know You're Here</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body>
@@ -16,27 +17,29 @@
 
   <main>
     <div class="container">
-      <form>
         <div class="select">
-          <label for="situation-list">What do you want to walk into?</label><br>
-            <form>
-             New situation:<br>
-             <input type="text" name="newsitation"><br>
+          <h2 id="submissionheading">Create your own situation!</h2><br>
+            <form id="newsituationform">
+             <label class="submissionlabel">New situation name:</label>
+             <input type="text" name="name" class="newsituation" id="new-situation">
+             <label class="submissionlabel">Song Name:</label>
+             <input type="text" name="songName" class="newsituation" id="new-song">
+             <label class="submissionlabel">Song Artist:</label>
+             <input type="text" name="artistName" class="newsituation" id="new-artist">
+             <label class="submissionlabel">Video URL:</label>
+             <input type="text" name="avSource" class="newsituation" id="new-url">
            </form>
         </div>
-        <div class="button">
-          <button type="submit" class="newsituation">Submit new situation.</button>
+        <div class="button-container">
+          <button type="submit" class="button" id="submit">SUBMIT</button>
         </div>
-      </form>
-      <div class="video">
-        <iframe src="" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </divdiv>
+    </div>
   </main>
   <footer>
-    <div class="nav"><a href="index.html">Home</a></div>
+    <div class="nav"><a href="about.html">About</a></div>
     <div class="nav"><a href="">Submit Your Own</a></div>
   </footer>
   <script src="./src/index.js" charset="utf-8"></script>
+  <script src="src/submit.js"></script>
 </body>
 </html>
