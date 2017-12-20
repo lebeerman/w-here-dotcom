@@ -1,9 +1,70 @@
 /* GLOBAL STYLING */
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+/* font-family: 'Ubuntu', sans-serif; */
+
+a, p, h1, h2, h3, {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 /* MAIN STYLING */
 
 .situationlist {}
 
+strong {
+  font-weight: bold;
+}
+
 /* HEADER STYLING */
 
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  height: 10rem;
+  width: 43em;
+}
+
 /* FOOTER STYLING */
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.nav {
+  padding: 0 1rem;
+}
+
+
+/* ABOUT STYLING */
+
+.about, .coming-soon {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1em 3rem;
+}
+
+.about {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.coming-soon {
+  font-size: 1.6em;
+  font-weight: bold;
+}
