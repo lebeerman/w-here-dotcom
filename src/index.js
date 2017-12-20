@@ -15,3 +15,8 @@ fetch("https://radiant-coast-65532.herokuapp.com/",  {
   .then(response => response.json())
   .then(response => console.log(response))
   .catch(err => console.log(err));
+
+
+const button = document.querySelector('button');
+const videoDiv = document.querySelector('.video');
+const form = document.querySelector('.situationlist');
