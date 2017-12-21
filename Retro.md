@@ -1,6 +1,5 @@
 W'Here
 
-
 START
 More regular/stricter push, pull, and deploy breaks.
 Deploy front & backend early.
