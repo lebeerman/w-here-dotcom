@@ -21,19 +21,17 @@
           <h2 id="submissionheading">Create your own situation!</h2><br>
             <form id="newsituationform">
              <label class="submissionlabel">New situation name:</label>
-             <input type="text" name="name" class="newsituation">
-             <label class="submissionlabel">Mood:</label>
-             <input type="text" name="mood" class="newsituation">
+             <input type="text" name="name" class="newsituation" id="new-situation">
              <label class="submissionlabel">Song Name:</label>
-             <input type="text" name="songName" class="newsituation">
+             <input type="text" name="songName" class="newsituation" id="new-song">
              <label class="submissionlabel">Song Artist:</label>
-             <input type="text" name="artistName" class="newsituation">
+             <input type="text" name="artistName" class="newsituation" id="new-artist">
              <label class="submissionlabel">Video URL:</label>
-             <input type="text" name="avSource" class="newsituation">
+             <input type="text" name="avSource" class="newsituation" id="new-url">
            </form>
         </div>
         <div class="button-container">
-          <button type="submit" class="button">SUBMIT</button>
+          <button type="submit" class="button" id="submit">SUBMIT</button>
         </div>
     </div>
   </main>
@@ -42,5 +40,6 @@
     <div class="nav"><a href="">Submit Your Own</a></div>
   </footer>
   <script src="./src/index.js" charset="utf-8"></script>
+  <script src="src/submit.js"></script>
 </body>
 </html>

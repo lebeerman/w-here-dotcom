@@ -1,7 +1,8 @@
 const situationsURL = "https://w-here-dotcom.herokuapp.com/situations";
 const songsURL = "https://w-here-dotcom.herokuapp.com/songs";
 const button = document.querySelector(".button");
-const videoDiv = document.querySelector("iframe");
+let videoDiv = document.querySelector("iframe");
+let songDescription = document.querySelector(".song-info");
 let situationList = document.querySelector("select");
 let chosenSituation;
 let situationID;
@@ -9,13 +10,14 @@ let situationID;
 document.onload = fetchSituationInfoFromAPI();
 situationList.onchange = changeEventHandler;
 
-button.addEventListener("click", () => {
-	console.log(chosenSituation);
-	console.log(situationID);
+button.addEventListener("click", (event) => {
+	event.preventDefault();
 	fetch(songsURL)
 	.then(response => response.json())
 	.then(response => {
-		console.log(response);
+		let selectedSong = response.filter(song => song.id == situationID);
+		displaySongInfo(selectedSong[0]);
+
 	});
 });
 
@@ -33,22 +35,21 @@ function fetchSituationInfoFromAPI(){
 	.catch(console.error);
 }
 
-function fetchSongInfoFromAPI(){
-	fetch(songsURL)
-	.then(response => response.json())
-	.then(response => {
-		console.log(response);
-		// let selectedSong = response.filter(song => song.id == situationID);
-		// console.log(selectedSong);
-		// console.log(chosenSituation);
-		// console.log(situationID);
-		//displaySongInfo(response);
-	})
-	.catch(console.error);
-}
+// function fetchSongInfoFromAPI(){
+// 	fetch(songsURL)
+// 	.then(response => response.json())
+// 	.then(response => {
+// 		let selectedSong = response.filter(song => song.id == situationID);
+// 		displaySongInfo(selectedSong[0]);
+// 	})
+// 	.catch(console.error);
+// }
 
-function displaySongInfo(responseData){
-	console.log(responseData);
+function displaySongInfo(songData){
+	console.log(songData);
+	videoDiv.src = songData.avSource;
+	songDescription.innerText = "Walkin' in to " + songData.songName + " by " + songData.artistName;
+
 }
 
 function createOptions(situationData){
