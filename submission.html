@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>W'here: The App that Let's Everyone Know You're Here</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="assets/w-here-logo.png" alt="W'Here</br>the app that let's everyone know you're here"/>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="select">
+          <h2 id="submissionheading">Create your own situation!</h2><br>
+            <form id="newsituationform">
+             <label class="submissionlabel">New situation name:</label>
+             <input type="text" name="name" class="newsituation" id="new-situation">
+             <label class="submissionlabel">Song Name:</label>
+             <input type="text" name="songName" class="newsituation" id="new-song">
+             <label class="submissionlabel">Song Artist:</label>
+             <input type="text" name="artistName" class="newsituation" id="new-artist">
+             <label class="submissionlabel">Video URL:</label>
+             <input type="text" name="avSource" class="newsituation" id="new-url">
+           </form>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="button" id="submit">SUBMIT</button>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="nav"><a href="about.html">About</a></div>
+    <div class="nav"><a href="">Submit Your Own</a></div>
+  </footer>
+  <script src="./src/index.js" charset="utf-8"></script>
+  <script src="src/submit.js"></script>
+</body>
+</html>
